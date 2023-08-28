@@ -1,3 +1,4 @@
-site_name: My Docs
+site_name: Notes de CDA
 theme:
   name: terminal
+repo_url: https://github.com/Lzn-Dev/Notes_Dev 
