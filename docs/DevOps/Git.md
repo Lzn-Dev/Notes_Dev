@@ -4,7 +4,7 @@
 ### Why Git ( pourquoi git ) ?
 
 - C'est un outil de versionning. Dans notre cas du code mais ça pourrait être des données dite 'textuel'.
-- On. ne stock que *le code source* dans git. Pas de code compilé. 
+- On. ne stock que *le code source* dans git. Pas de code compilé.
 
 1. L'historisation des changements
 2. La traçabilité
@@ -16,16 +16,16 @@
 #### Les commits permettent de répondre à =>
 
 - Qui ?
-- Quoi ? 
-- Où ? 
-- Quand ? 
+- Quoi ?
+- Où ?
+- Quand ?
 
-git commit --allow-empty -> Commit vide, utile pour le premier commit. 
+git commit --allow-empty -> Commit vide, utile pour le premier commit.
 
 #### Le Fork
 Le fork sert à copier un repo pour pouvoir y apporter des modifications sans alterer le 'main repo'.
 
-#### Commandes à revoir 
+#### Commandes à revoir
 Fork - Branch - Rebase - Revert - Merge - Tag - Fetch
 
 **Bonnes pratique Git Commit =>** [https://www.conventionalcommits.org/en/v1.0.0/](https://www.conventionalcommits.org/en/v1.0.0/)
@@ -33,4 +33,3 @@ Fork - Branch - Rebase - Revert - Merge - Tag - Fetch
 https://semver.org/
 **Commitizen, outil pour gerer les commit =>**
 https://commitizen-tools.github.io/commitizen/
-

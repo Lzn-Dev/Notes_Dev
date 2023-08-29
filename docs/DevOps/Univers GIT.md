@@ -8,14 +8,14 @@
 5. La gestion des versions
 
 >C'est un outil de versionning. Dans notre cas du code mais ça pourrait être tout ce qui concerne des données dite 'textuel'.
->On ne stock que *le code source* dans git. Pas de code compilé. 
+>On ne stock que *le code source* dans git. Pas de code compilé.
 
 ### 1. Commits
 
 Les commits permettent de répondre aux quatre question :
 >Qui - Quoi - Quand - Où
 
-### 2. Les commandes à revoir 
+### 2. Les commandes à revoir
 
 []Fork
 []Branch
@@ -25,11 +25,11 @@ Les commits permettent de répondre aux quatre question :
 []Tag
 []Fetch
 
-#### 2.1 Les - à maitriser 
+#### 2.1 Les - à maitriser
 
 [] -p
 
-### 3. Les liens utiles 
+### 3. Les liens utiles
 
 Pour une bonne pratique des *git commit* : [conventionalcommit](https://www.conventionalcommits.org/en/v1.0.0/)
 Sémantique du *versionning* : [semver](https://semver.org/)
@@ -40,6 +40,3 @@ Liste super utile sur GitHub de pléthore de ressources : [Awesome](https://gith
 - [ ] Buy Eggs.
 - [ ] Buy Milk.
 - [ ] Wash Clothes.
-
-
-

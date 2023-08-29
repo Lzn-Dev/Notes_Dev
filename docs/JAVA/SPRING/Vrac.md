@@ -1,3 +1,3 @@
-- On evite de faire le traitement dans le controller. 
-- API Rest => Toujours renvoyé la bonne erreur à l'utilisateur pour qu'il ai l'information la plus préccise possible ( Code HTTP ) 
-- Eviter les litéraux 
+- On evite de faire le traitement dans le controller.
+- API Rest => Toujours renvoyé la bonne erreur à l'utilisateur pour qu'il ai l'information la plus préccise possible ( Code HTTP )
+- Eviter les litéraux

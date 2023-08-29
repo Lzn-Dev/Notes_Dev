@@ -13,16 +13,16 @@ Utile dans 2 cas :
 
 ``` Java
 
----------------- ArrayList<E> ------------------ 
+---------------- ArrayList<E> ------------------
 
-La classe générique c est le fait de pouvoir créer une "ArrayList<>();" de quelque chose. De typé les éléments que va contenir notre "ArrayList" 
+La classe générique c est le fait de pouvoir créer une "ArrayList<>();" de quelque chose. De typé les éléments que va contenir notre "ArrayList"
 Exemple :
 - ArrayList<String> : Liste de String
 - ArrayList<Logement> : Liste de logements
 -  ...
 
 Convention des noms de types :
-<T> => Type 
+<T> => Type
 <E> => Element
 <K> et< V> => Key et Value
 <N> => Number
@@ -40,7 +40,7 @@ public static <T> T methode(T obj) {
 }
 
 public static <T extends Personne> void methode(T obj) {
-// Méthode générique qui attend un objet de type Personne ou une 
+// Méthode générique qui attend un objet de type Personne ou une
 // sous classe à Personne.
 }
 
@@ -61,7 +61,7 @@ public class Generic <T> {
 		return obj
 	}
 }
-// Ou en extends : 
+// Ou en extends :
 public class Generic <T extends Personne> {
 // ...
 }
@@ -71,7 +71,7 @@ Generic<Personne> genericPersonne = new Genericc<Personne>(p1);
 
 ------------------- JOKER ---------------------
 
-Comment créer une méthode avec uyn parametre de type de classe générique ? 
+Comment créer une méthode avec uyn parametre de type de classe générique ?
 private static void print (ArrayList<?> liste) {
 /// ...
 }
@@ -86,11 +86,11 @@ private static vvoid methode (Generic<? super Hote> arg) {
 
 ```
 
-### Les classes immuables 
+### Les classes immuables
 
 ``` Java
 
-"Mutable" = Quelque chose qui peut évolué 
+"Mutable" = Quelque chose qui peut évolué
 ( On peut en changer ses valeurs )
 ---- VS ----
 "Immutable" = Qui ne peut pas évolué
@@ -98,7 +98,7 @@ private static vvoid methode (Generic<? super Hote> arg) {
 
 ------------- DEFINITION ----------------
 
-Une classe définie sans possibilité de mutation.  
+Une classe définie sans possibilité de mutation.
 Cela permet de créer une 'classe' avec l 'assurance que ces instances ne puissent pas changer' de valeurs pour leurs champs.
 Java permet de garantir l immuabilité en déclarant les champs final
 
@@ -109,7 +109,7 @@ private final int y;
 
 -------------- Avantages ----------------
 
-- Un seul état 
+- Un seul état
 - Facile à créer , tester
 - "thread-safe"
 - Leurs valeurs de hachage reste fixe et peut même être mise en cache une fois calculée dans le constructeur : ilssont donc à privilégier dans les collections de type Map et Set.
@@ -135,16 +135,16 @@ public StringBuilder getName() {
 
 ```
 
-### Classe anonyme 
+### Classe anonyme
 
 ```Java
 Le fait de faire un new sur une interface ou sur une class abstract permet de mettre en place une classe anonyme.
-Il faut alors mettre le corp de la classe ou de l interface à la suite du code : 
+Il faut alors mettre le corp de la classe ou de l interface à la suite du code :
 
 Interface interface = new Interface() {
 	@overide
 	public void maMethodeInterface() {
-		// ... 
+		// ...
 	}
 }
 
@@ -152,9 +152,9 @@ Interface interface = new Interface() {
 
 ### Expression lambda
 ```Java
-On utilise des Interfaces Fonctionelles pour cela, des interfaces à une seule méthode. 
+On utilise des Interfaces Fonctionelles pour cela, des interfaces à une seule méthode.
 
-On notera en annotation : 
+On notera en annotation :
 
 @FunctionnalInterface
 interface MonInterface() {
@@ -167,12 +167,12 @@ interface MonInterface() {
 ### Interface fonctionelle
 
 ```Java
-Par definition une interface fonctionnelle est une interface qui ne contient qu une et unique methode. 
+Par definition une interface fonctionnelle est une interface qui ne contient qu une et unique methode.
 
 ```
 
 
-### Interface graphique 
+### Interface graphique
 
 ```Java
 JFrame en Java pour l interface graphique
@@ -189,11 +189,11 @@ Se renseigner, c est l operateur "::"
 ```Java
 => Permet de gérer des collection via la classe "Stream";
 
-Ex : 
+Ex :
 Stream<Integer> stream = Stream.of(new Integer[]{1, 2, 3, 4});
 stream.forEach(p -> System.out.println(p));
 
-=> On peut aussi appliquer le stream à une liste déja existante : 
+=> On peut aussi appliquer le stream à une liste déja existante :
 List<String> maListe = new ArrayList<>();
 
 maListe.stream().filter(nom -> nom.startWith("A"));

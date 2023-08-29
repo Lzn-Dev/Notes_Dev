@@ -24,7 +24,7 @@ Utile lors d'incident de production et besoins de réactivité vraiment très fo
 - Jeu du planning
 - Intégration continue
 - Petites livraisons
-- Test unitaire et recette en continue 
+- Test unitaire et recette en continue
 
 ### Schéma
 ![Schéma de la méthode XP](file:///Users/matthieu/Dossier_CDA/GestionProjet/img/Capture%20d%E2%80%99e%CC%81cran%202022-11-09%20a%CC%80%2011.04.12.png)

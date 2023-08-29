@@ -1,6 +1,6 @@
 # Gestion de Projet Agile
 
-## Pourquoi l'agilitié ? 
+## Pourquoi l'agilitié ?
 
 - Un marché avec une concurrence accrue.
 - Un marché de plus en plus réactif (MVP). Voir [[Notes]]
@@ -20,7 +20,7 @@
 En méthode Agile, si un client arrive avec un besoin de "se déplacer", on commence par lui faire un vélo, il le test, puis on rajoute un moteur, une carosserie etc... Jusqu'à arriver à la satisfaction complète du client.
 
 
-## Caractèristiques de la culture agile 
+## Caractèristiques de la culture agile
 
 - Confiance et transparence.
 - Collaboration, entraide.
@@ -28,7 +28,7 @@ En méthode Agile, si un client arrive avec un besoin de "se déplacer", on comm
 - Résolutions des problèmes.
 
 
-## Les principes 
+## Les principes
 
 ### Priorité à ce qui est important
 Chacun des itérations de développement porte sur les fonctionnalités qui apportent le plus de valeur au client.
@@ -39,7 +39,7 @@ Mise en visibilité de l'avancement quotidien et collectif.
 ### Collaboration et confiance
 
 
-## Bénéfices 
+## Bénéfices
 
 ### Côté client :
 - Visibilité de l'avancement réel du produit.
@@ -78,7 +78,7 @@ Voir le manifeste agile ou [[Manifesto]] pour avoir une meilleure compréhension
 ## *LES* méthodes Agiles
 
 ***On peux créer sa propre méthode agile, on doit cependent respecter le [[Manifesto]]***
-*Interface -> Implémentation* 
+*Interface -> Implémentation*
 
 ### Le socle commun
 - Flexibilité
@@ -89,11 +89,10 @@ Voir le manifeste agile ou [[Manifesto]] pour avoir une meilleure compréhension
 - Amélioration continue
 
 ### Les différents types de méthode Agiles ( Principals )
-- [[SCRUM]] 
+- [[SCRUM]]
 - TDD : Test Driven Development
 - [[Kanban]]
 - [[Lean]]
 - XP : Xtreme Programming
 - FDD : Feature Driven Development
 - Et plein d'autres ...
-

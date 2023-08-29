@@ -17,6 +17,3 @@ Ressource : https://c4model.com/
 
 
 ***Assez complexe ! A travailler***
-
-
-

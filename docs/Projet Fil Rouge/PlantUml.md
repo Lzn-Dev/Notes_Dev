@@ -14,11 +14,11 @@ opt Filtrer agenda
 end
 Site -> Back: Requête
 Back -> BDD: Requête
-BDD --> Back: 
+BDD --> Back:
 Back --> Site:
 Site --> Utilisateur: Affichage
 
-Utilisateur -> Site: Sélectionne une date 
+Utilisateur -> Site: Sélectionne une date
 Site -> Back: Requête page formulaire
 Back -> BDD: Requête disponibilité des salles
 BDD --> Back:
@@ -31,23 +31,23 @@ Utilisateur -> Site: Renseigne les champs
 Site -> Utilisateur: Règles métiers
 alt Validation formulaire
     Utilisateur -> Site: Valide le formulaire
-    Site -> Back: Requête 
+    Site -> Back: Requête
     Back -> BDD: Requête pour reserver la salle
-    alt Salle disponible 
+    alt Salle disponible
         BDD -> BDD: Réservation salle
     else Salle non disponible
         BDD -> BDD: En attente de validation
     end
-    BDD --> Back: 
+    BDD --> Back:
     Back --> Site:
     Site --> Utilisateur: Message information
 else Annulation
-    Utilisateur -> Site: Annule la réservation 
+    Utilisateur -> Site: Annule la réservation
     Site -> Back: Redirection page d'accueil
     Back -> BDD: Requête
-    BDD --> Back: 
+    BDD --> Back:
     Back --> Site:
-    Site --> Utilisateur: Retour page d'accueil 
+    Site --> Utilisateur: Retour page d'accueil
 end
 
 @enduml
@@ -72,9 +72,9 @@ Site --> Utilisateur: Affichage des infos
 
 Utilisateur -> Site: Sélectionne une entité
 Site -> Back: Requête page crud
-Back -> BDD: Requête 
+Back -> BDD: Requête
 BDD --> Back:
-Back --> Site: 
+Back --> Site:
 Site -> Utilisateur: Renvoi vers la page crud
 
 == Page Crud==
@@ -86,20 +86,20 @@ alt Modifier / Ajouter
     Site -> Site: Verification champs
     Site -> Back: Requête
     Back -> BDD: Requête
-    alt Succès 
+    alt Succès
         BDD -> BDD: Ajout/Modification
     end
     BDD --> Back:
     Back --> Site:
     Site --> Utilisateur: Message d'informations
-    
-else Supprimer 
+
+else Supprimer
     Utilisateur -> Site: Supprimer
     Site -> Utilisateur: Demande de confirmation
     Utilisateur -> Site: Réponse
     alt Confirmé
         Site -> Back: Requête
-        Back -> BDD: Requête 
+        Back -> BDD: Requête
         BDD -> BDD: Suppression
         BDD --> Back:
         Back --> Site:

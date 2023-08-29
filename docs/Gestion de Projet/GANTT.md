@@ -8,6 +8,4 @@
 - La date de début et la date de fin de chaque tâche
 - La durée escomptée de chaque tâche
 - Le chevauchement éventuel des tâches, et la durée de ce chevauchement
-- La date de début et la date de fin du projet dans son ensemble 
-
-
+- La date de début et la date de fin du projet dans son ensemble

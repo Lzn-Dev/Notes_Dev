@@ -1,7 +1,7 @@
 # SRUM
 ***Terme du Rugby pour dire "Une mêlée"
 
-## La théorie 
+## La théorie
 
 ### Définition :
 - Cadre méthodologique pour développer les produits complexes :
@@ -32,7 +32,7 @@
 		- Possède une *excellente connaissance du métier*
 		- Gère les *feedbacks des utilisateurs* liées à l'utilisation et aux changements du produit
 		- *Optimise* la valeur du produit dans l'entreprise
-		
+
 **Equipe de développement**
 - Auto-gérée.
 - Réalise le développement.
@@ -41,8 +41,8 @@
 		- Ils *développent* et *délivrent* à chaque *Sprint* un porduit appelé **incrément**, potentiellement utilisable.
 		- *Pluridisciplinaire* et *compétente*.
 		- *Responsable de la qualité du développement* du produit.
-		
-**Le scrum master => SM** 
+
+**Le scrum master => SM**
 - Faire adhérer l'équipe à la théorie, aux pratique et aux règles.
 - Facilitateur
 - C'est l'arbitre
@@ -56,7 +56,7 @@
 
 ### Les cérémonies
 ***Cérémonie Scrum : Sprint ( timebox d'un mois max)***
-- Sprint Planning 
+- Sprint Planning
 	- => Définir l'objectif du Sprint, Analyser et évaluer le Product Backlog
 	- En collaboration avec toute l'équipe
 - Daily scrum ( 15 minutes )
@@ -67,7 +67,7 @@
 	- Amélioration des méthodes utilisées ( personne, relation, processus, outils )
 
 
-### Les artefacts 
+### Les artefacts
 ***Eléments tangibles***
 - Représentant du travail ou de la valeur
 - Fournissant de la visibilité à l'intérieur et à l'exterieur de l'équipe ( Transparance )
@@ -77,8 +77,8 @@
 ***X.Y.Z => X : Major , Y : Minor , Z : Patch***
 ***Exemple : 1.4.3***
 
-**Une release a deux sens distincts :** 
-	1. Version délivrée d'un porduit 
+**Une release a deux sens distincts :**
+	1. Version délivrée d'un porduit
 	2. Période de temps nécessaire à la production de ce produit
 - L'ensemble des sprints d'un produit forme une *release*
 - Un *incrément* est une partie d'un produit utilisable
@@ -92,9 +92,9 @@
 - Les valeurs des cartes du planning poker :
 	- 0 , 1/2 , 1 , 2 , 3 , 5 , 8 , 13 , 20 , 40 , 100 , ?
 - Chacun des acteurs choisis une carte, la retourne face caché et la découvre,  en même temps que les autres, ainsi les choix ne sont pas biaisés et la discussion part de ce point.
- 
 
-## Glossaire 
+
+## Glossaire
 - *Product Backlog* : Carnet de produit géré par le PO => Liste ordonée, priorisé et exhaustive d'items (éléments), ou de stories à développer par l'équipe.
 - *Items* : Chaque item inclut une description, une priorité, une estimation de l'effort et la valeur apporté. Les items peuvent être des :
 	- Features ( Caractéristiques )
@@ -110,13 +110,9 @@
 - Potentially Shippable Product Increment
 - Velocity
 - Release Burndown
-- *User Story* : Formalisé comme suit : 
+- *User Story* : Formalisé comme suit :
 	- En tant que ( As a .. ) -> Rôle
 	- Je veux ( I want .. )  -> Fonctionnalité
 	- Afin de ( So that .. ) -> Valeur
 	- Exemple : *En tant que* client *je veux* télécharger ma facture *afin de* la payer par CB sur internet
-- *INVEST* pour Indépendante Négociable Valorisable Estimable Small Testable 
-
-
-
-
+- *INVEST* pour Indépendante Négociable Valorisable Estimable Small Testable

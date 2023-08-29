@@ -3,7 +3,7 @@
 >Markdown est un langage de balisage léger créé en *2004* par **John Gruber** avec l'aide d'Aaron Swartz, dans le but d'offrir une syntaxe facile à lire et à écrire. Un document balisé par Markdown peut être lu en l'état sans donner l’impression d'avoir été balisé ou formaté par des instructions particulières.
 
 
-## Les titres 
+## Les titres
 ```mixed
 #  Titre 1
 ## Titre 2
@@ -56,7 +56,7 @@ UL : Choix entre '+', '-', '*'
 - Liste2
 - Liste3
 
-OL 
+OL
 1. Liste 1
 2. Liste 2
 3. Liste 3
@@ -98,9 +98,3 @@ Ici ce qui suit [MonSuperLien](https://example.com/ "titre de lien optionnel").
 |    A    |    B    |
 |    C    |    D    |
 ```
-
-
-
-
-
-

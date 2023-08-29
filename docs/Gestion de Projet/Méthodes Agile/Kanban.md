@@ -13,7 +13,7 @@
 ![Schema methode Kanban](file:///Users/matthieu/Dossier_CDA/GestionProjet/img/Capture%20d%E2%80%99e%CC%81cran%202022-11-09%20a%CC%80%2011.17.01.png)
 
 
-## En pratique 
+## En pratique
 - Visualiser le travail en cours
 - Limiter le travail en cours ( WIP => Work In Progress )
 	- Limiter la pression
@@ -23,6 +23,3 @@
 - Intégrer les feedbacks
 	- Stand-up meeting, revue de livraison de service, revue opérationnelle, revue des risques ...
 - Amélioration grâce à la collaboration et à l'évolution par expérimentation
-
-
-
