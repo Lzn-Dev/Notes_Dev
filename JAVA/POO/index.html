@@ -323,6 +323,22 @@
         
             <a class="
 
+    terminal-mkdocs-side-nav-item" href="../../DevOps/Outillage/">Les outillages utiles en dév.</a>
+        
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
     terminal-mkdocs-side-nav-item" href="../../DevOps/Univers%20GIT/">Univers GIT</a>
         
     
@@ -1003,30 +1019,30 @@
 <h3 id="labstraction">L'abstraction</h3>
 <ul>
 <li>Exemple : Pour conduire une voiture, on utilise les pédales, le levier de vitesse et le volant <strong><em>sans avoir besoin</em></strong> de connaître le fonctionnement interne exacte de la voiture.</li>
-<li>Les avantages : <ul>
+<li>Les avantages :<ul>
 <li>Reduire la complexité.</li>
 <li>Eviter la duplication.</li>
 </ul>
 </li>
-<li>Une classe qui ne peut pas être instancié. </li>
+<li>Une classe qui ne peut pas être instancié.</li>
 <li>Une méthode abstraite est définit vide dans le parent, et oblige ses filles à redéclarer cette méthode.</li>
 </ul>
 <h3 id="lheritage">L'héritage</h3>
 <ul>
-<li>Mécanisme pour définir  une nouvelle classe comme extension d'une classe préexistante. </li>
+<li>Mécanisme pour définir  une nouvelle classe comme extension d'une classe préexistante.</li>
 <li>La classe <em>fille</em> hérite également du comportement (méthodes) de la classe <em>mère</em>.</li>
-<li>Le mot clé <em>extends</em> à la définition de classe, ne permet que l'héritage simple. </li>
-<li>L'héritage par implémentation. <ul>
-<li>Une classe peut hériter de 0, 1 ou plusieurs interfaces par implémentation. </li>
-<li>Mot clé <em>implements</em> à la définition de la classe, ne permet que l'héritage d'interface. </li>
+<li>Le mot clé <em>extends</em> à la définition de classe, ne permet que l'héritage simple.</li>
+<li>L'héritage par implémentation.<ul>
+<li>Une classe peut hériter de 0, 1 ou plusieurs interfaces par implémentation.</li>
+<li>Mot clé <em>implements</em> à la définition de la classe, ne permet que l'héritage d'interface.</li>
 </ul>
 </li>
-<li>Rajouter l'annotation @Override quand on redéfinit une méthode de la classe parente dans la classe enfant. </li>
+<li>Rajouter l'annotation @Override quand on redéfinit une méthode de la classe parente dans la classe enfant.</li>
 <li>Il existe une classe, nommé Object, qui est la mère de toutes les classes. De base si l'on crée une classe, le compilateur rajoutera extends Object. Si la classe n'hérite pas déjà d'une autre classe.</li>
 </ul>
 <h3 id="lencapsulation">L'encapsulation</h3>
 <ul>
-<li>Le fait d'enfermer et de masquer à l'intérieur d'une classe : <ul>
+<li>Le fait d'enfermer et de masquer à l'intérieur d'une classe :<ul>
 <li>Les données</li>
 <li>L'implémentation des méthodes</li>
 </ul>
@@ -1034,9 +1050,9 @@
 </ul>
 <h3 id="polymorphisme">Polymorphisme</h3>
 <ul>
-<li>Une capacité de la programmation orienté objet permettant de maniper un objet sous un type plus général que le sien. </li>
-<li>C'est grâce à l'héritage que le polymorphisme existe. </li>
-<li>Un objet peut apparaître sous un type plus général que le sien, c'est à dire sous la forme de sa classe mère. </li>
+<li>Une capacité de la programmation orienté objet permettant de maniper un objet sous un type plus général que le sien.</li>
+<li>C'est grâce à l'héritage que le polymorphisme existe.</li>
+<li>Un objet peut apparaître sous un type plus général que le sien, c'est à dire sous la forme de sa classe mère.</li>
 </ul>
 <h3 id="les-mots-cles">Les mots clés :</h3>
 <h4 id="this">This. :</h4>
@@ -1047,7 +1063,7 @@
 <ul>
 <li>Qui est partagé. =&gt; On va pouvoir utilisé ce mot clé devant un attribut.</li>
 <li><em>Ce n'est pas lié aux instances mais à la classe elle même.</em></li>
-<li>Si un objet modifie la valeur de l'attribut, il sera modifié pour tout les objets. <ul>
+<li>Si un objet modifie la valeur de l'attribut, il sera modifié pour tout les objets.<ul>
 <li>Ex :</li>
 </ul>
 </li>
@@ -1056,7 +1072,7 @@
 // La largeur sera partagé entre toutes les instances de la classe terrain.
 public static void initLongueur(int value) {
     longueur = value;
-    // Ici ce n'est pas this.longueur, si on l'écris ça ne compilerait pas. C'est la classe et non l'instance qui est impacté. 
+    // Ici ce n'est pas this.longueur, si on l'écris ça ne compilerait pas. C'est la classe et non l'instance qui est impacté.
 }
 </code></pre>
 <ul>
@@ -1068,18 +1084,18 @@ public static void initLongueur(int value) {
 <li>Indique qu'un élément ne peut être changé dans las uite du programme.</li>
 <li>On dit qu'il est non modifiable que ce soit par lui ou par des éventuelles sous classes.</li>
 <li>Il doit <em>obligatoirement</em> être initalisé.</li>
-<li>A le rôle d'une CONST </li>
-<li>Personne dans le programme ne pourra alterer la donnée. </li>
+<li>A le rôle d'une CONST</li>
+<li>Personne dans le programme ne pourra alterer la donnée.</li>
 </ul>
 <h3 id="interface">Interface</h3>
 <ul>
 <li>Une interface est une Type <em>complétement abstraite</em></li>
-<li>C'est une liste de promesses </li>
+<li>C'est une liste de promesses</li>
 <li>Lorsqu'une classe tient les promesses d'une interface on dit que la classe implémente l'interface</li>
 <li>Particularités :<ul>
 <li>Une classe peut implémenter plusieurs interfaces</li>
 <li>Les interfaces peuvent hériter les unes des autres</li>
-<li>On peux faire des setter protected pour laisser le droit au filles mais mettre des conditions. </li>
+<li>On peux faire des setter protected pour laisser le droit au filles mais mettre des conditions.</li>
 </ul>
 </li>
 </ul>
@@ -1087,7 +1103,7 @@ public static void initLongueur(int value) {
 <ul>
 <li>Définition : circonstance endant la poursuite de l'éxecution inutile ou impossible ( erreur dans les données, défaillance materielle ... ).</li>
 <li>Principe du mécanisme :<ol>
-<li>Détection de l'anomalie </li>
+<li>Détection de l'anomalie</li>
 <li>La méthode lance (throw) l'exception vers celle qui l'a appelé</li>
 <li>L'exceptionremonte</li>
 <li>Jusqu'a une méthode ou on a prévu d'attrapé ( catch ) l'exception</li>

@@ -323,6 +323,22 @@
         
             <a class="
 
+    terminal-mkdocs-side-nav-item" href="../../DevOps/Outillage/">Les outillages utiles en dév.</a>
+        
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
     terminal-mkdocs-side-nav-item" href="../../DevOps/Univers%20GIT/">Univers GIT</a>
         
     
@@ -1015,16 +1031,16 @@ Utile dans 2 cas :
 </code></pre>
 <h3 id="la-genericite">La généricité :</h3>
 <pre><code class="language-Java">
----------------- ArrayList&lt;E&gt; ------------------ 
+---------------- ArrayList&lt;E&gt; ------------------
 
-La classe générique c est le fait de pouvoir créer une &quot;ArrayList&lt;&gt;();&quot; de quelque chose. De typé les éléments que va contenir notre &quot;ArrayList&quot; 
+La classe générique c est le fait de pouvoir créer une &quot;ArrayList&lt;&gt;();&quot; de quelque chose. De typé les éléments que va contenir notre &quot;ArrayList&quot;
 Exemple :
 - ArrayList&lt;String&gt; : Liste de String
 - ArrayList&lt;Logement&gt; : Liste de logements
 -  ...
 
 Convention des noms de types :
-&lt;T&gt; =&gt; Type 
+&lt;T&gt; =&gt; Type
 &lt;E&gt; =&gt; Element
 &lt;K&gt; et&lt; V&gt; =&gt; Key et Value
 &lt;N&gt; =&gt; Number
@@ -1042,7 +1058,7 @@ public static &lt;T&gt; T methode(T obj) {
 }
 
 public static &lt;T extends Personne&gt; void methode(T obj) {
-// Méthode générique qui attend un objet de type Personne ou une 
+// Méthode générique qui attend un objet de type Personne ou une
 // sous classe à Personne.
 }
 
@@ -1063,7 +1079,7 @@ public class Generic &lt;T&gt; {
         return obj
     }
 }
-// Ou en extends : 
+// Ou en extends :
 public class Generic &lt;T extends Personne&gt; {
 // ...
 }
@@ -1073,7 +1089,7 @@ Generic&lt;Personne&gt; genericPersonne = new Genericc&lt;Personne&gt;(p1);
 
 ------------------- JOKER ---------------------
 
-Comment créer une méthode avec uyn parametre de type de classe générique ? 
+Comment créer une méthode avec uyn parametre de type de classe générique ?
 private static void print (ArrayList&lt;?&gt; liste) {
 /// ...
 }
@@ -1089,7 +1105,7 @@ private static vvoid methode (Generic&lt;? super Hote&gt; arg) {
 </code></pre>
 <h3 id="les-classes-immuables">Les classes immuables</h3>
 <pre><code class="language-Java">
-&quot;Mutable&quot; = Quelque chose qui peut évolué 
+&quot;Mutable&quot; = Quelque chose qui peut évolué
 ( On peut en changer ses valeurs )
 ---- VS ----
 &quot;Immutable&quot; = Qui ne peut pas évolué
@@ -1097,7 +1113,7 @@ private static vvoid methode (Generic&lt;? super Hote&gt; arg) {
 
 ------------- DEFINITION ----------------
 
-Une classe définie sans possibilité de mutation.  
+Une classe définie sans possibilité de mutation.
 Cela permet de créer une 'classe' avec l 'assurance que ces instances ne puissent pas changer' de valeurs pour leurs champs.
 Java permet de garantir l immuabilité en déclarant les champs final
 
@@ -1108,7 +1124,7 @@ private final int y;
 
 -------------- Avantages ----------------
 
-- Un seul état 
+- Un seul état
 - Facile à créer , tester
 - &quot;thread-safe&quot;
 - Leurs valeurs de hachage reste fixe et peut même être mise en cache une fois calculée dans le constructeur : ilssont donc à privilégier dans les collections de type Map et Set.
@@ -1135,20 +1151,20 @@ public StringBuilder getName() {
 </code></pre>
 <h3 id="classe-anonyme">Classe anonyme</h3>
 <pre><code class="language-Java">Le fait de faire un new sur une interface ou sur une class abstract permet de mettre en place une classe anonyme.
-Il faut alors mettre le corp de la classe ou de l interface à la suite du code : 
+Il faut alors mettre le corp de la classe ou de l interface à la suite du code :
 
 Interface interface = new Interface() {
     @overide
     public void maMethodeInterface() {
-        // ... 
+        // ...
     }
 }
 
 </code></pre>
 <h3 id="expression-lambda">Expression lambda</h3>
-<pre><code class="language-Java">On utilise des Interfaces Fonctionelles pour cela, des interfaces à une seule méthode. 
+<pre><code class="language-Java">On utilise des Interfaces Fonctionelles pour cela, des interfaces à une seule méthode.
 
-On notera en annotation : 
+On notera en annotation :
 
 @FunctionnalInterface
 interface MonInterface() {
@@ -1157,7 +1173,7 @@ interface MonInterface() {
 </code></pre>
 <p><img alt="Texte alternatif" src="file:///Users/matthieu/Desktop/Screenshots/Capture%20d%E2%80%99e%CC%81cran%202023-03-24%20a%CC%80%2009.55.05.png" /></p>
 <h3 id="interface-fonctionelle">Interface fonctionelle</h3>
-<pre><code class="language-Java">Par definition une interface fonctionnelle est une interface qui ne contient qu une et unique methode. 
+<pre><code class="language-Java">Par definition une interface fonctionnelle est une interface qui ne contient qu une et unique methode.
 
 </code></pre>
 <h3 id="interface-graphique">Interface graphique</h3>
@@ -1169,11 +1185,11 @@ interface MonInterface() {
 <h3 id="streams">Streams</h3>
 <pre><code class="language-Java">=&gt; Permet de gérer des collection via la classe &quot;Stream&quot;;
 
-Ex : 
+Ex :
 Stream&lt;Integer&gt; stream = Stream.of(new Integer[]{1, 2, 3, 4});
 stream.forEach(p -&gt; System.out.println(p));
 
-=&gt; On peut aussi appliquer le stream à une liste déja existante : 
+=&gt; On peut aussi appliquer le stream à une liste déja existante :
 List&lt;String&gt; maListe = new ArrayList&lt;&gt;();
 
 maListe.stream().filter(nom -&gt; nom.startWith(&quot;A&quot;));

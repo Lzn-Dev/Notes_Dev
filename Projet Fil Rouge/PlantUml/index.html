@@ -323,6 +323,22 @@
         
             <a class="
 
+    terminal-mkdocs-side-nav-item" href="../../DevOps/Outillage/">Les outillages utiles en dév.</a>
+        
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
     terminal-mkdocs-side-nav-item" href="../../DevOps/Univers%20GIT/">Univers GIT</a>
         
     
@@ -1013,11 +1029,11 @@ opt Filtrer agenda
 end
 Site -&gt; Back: Requête
 Back -&gt; BDD: Requête
-BDD --&gt; Back: 
+BDD --&gt; Back:
 Back --&gt; Site:
 Site --&gt; Utilisateur: Affichage
 
-Utilisateur -&gt; Site: Sélectionne une date 
+Utilisateur -&gt; Site: Sélectionne une date
 Site -&gt; Back: Requête page formulaire
 Back -&gt; BDD: Requête disponibilité des salles
 BDD --&gt; Back:
@@ -1030,23 +1046,23 @@ Utilisateur -&gt; Site: Renseigne les champs
 Site -&gt; Utilisateur: Règles métiers
 alt Validation formulaire
     Utilisateur -&gt; Site: Valide le formulaire
-    Site -&gt; Back: Requête 
+    Site -&gt; Back: Requête
     Back -&gt; BDD: Requête pour reserver la salle
-    alt Salle disponible 
+    alt Salle disponible
         BDD -&gt; BDD: Réservation salle
     else Salle non disponible
         BDD -&gt; BDD: En attente de validation
     end
-    BDD --&gt; Back: 
+    BDD --&gt; Back:
     Back --&gt; Site:
     Site --&gt; Utilisateur: Message information
 else Annulation
-    Utilisateur -&gt; Site: Annule la réservation 
+    Utilisateur -&gt; Site: Annule la réservation
     Site -&gt; Back: Redirection page d'accueil
     Back -&gt; BDD: Requête
-    BDD --&gt; Back: 
+    BDD --&gt; Back:
     Back --&gt; Site:
-    Site --&gt; Utilisateur: Retour page d'accueil 
+    Site --&gt; Utilisateur: Retour page d'accueil
 end
 
 @enduml
@@ -1068,9 +1084,9 @@ Site --&gt; Utilisateur: Affichage des infos
 
 Utilisateur -&gt; Site: Sélectionne une entité
 Site -&gt; Back: Requête page crud
-Back -&gt; BDD: Requête 
+Back -&gt; BDD: Requête
 BDD --&gt; Back:
-Back --&gt; Site: 
+Back --&gt; Site:
 Site -&gt; Utilisateur: Renvoi vers la page crud
 
 == Page Crud==
@@ -1082,20 +1098,20 @@ alt Modifier / Ajouter
     Site -&gt; Site: Verification champs
     Site -&gt; Back: Requête
     Back -&gt; BDD: Requête
-    alt Succès 
+    alt Succès
         BDD -&gt; BDD: Ajout/Modification
     end
     BDD --&gt; Back:
     Back --&gt; Site:
     Site --&gt; Utilisateur: Message d'informations
 
-else Supprimer 
+else Supprimer
     Utilisateur -&gt; Site: Supprimer
     Site -&gt; Utilisateur: Demande de confirmation
     Utilisateur -&gt; Site: Réponse
     alt Confirmé
         Site -&gt; Back: Requête
-        Back -&gt; BDD: Requête 
+        Back -&gt; BDD: Requête
         BDD -&gt; BDD: Suppression
         BDD --&gt; Back:
         Back --&gt; Site:
