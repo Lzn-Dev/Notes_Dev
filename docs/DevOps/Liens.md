@@ -2,3 +2,4 @@
 - Collection de template de .gitignore : [Liste](https://github.com/github/gitignore)
 - Site de génération de .gitignore : [TopTal](https://www.toptal.com/developers/gitignore)
 - Liste de projets pour débuter à contribuer sur GitHub : [Awesome For Beginner](https://github.com/MunGell/awesome-for-beginners)
+- Test navigateur payant pour dev front : [BrowserStack](https://www.browserstack.com/)

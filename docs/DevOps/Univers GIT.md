@@ -27,7 +27,9 @@ Les commits permettent de répondre aux quatre question :
 
 #### 2.1 Les - à maitriser
 
-[] -p
+- -p
+- git add -p **Super utile** pour avoir un listing interactif de tout les ficihiers modifiés
+- git diff nom_du_fichier
 
 ### 3. Les liens utiles
 
@@ -37,6 +39,7 @@ CommitZen pour installer un outil d'automatisation des commits sur un projet : [
 Liste super utile sur GitHub de pléthore de ressources : [Awesome](https://github.com/sindresorhus/awesome)
 
 
-- [ ] Buy Eggs.
-- [ ] Buy Milk.
-- [ ] Wash Clothes.
+### 4. Keygen
+
+Pour générer une nouvelle clé : `ssh-keygen`
+Pour ajouter la clé (privé) : `ssh-add`
