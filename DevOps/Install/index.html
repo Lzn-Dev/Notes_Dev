@@ -18,7 +18,7 @@
 
     
  
-<title>MarkDown - Notes de CDA</title>
+<title>Install - Notes de CDA</title>
 
 
 <link href="../../css/fontawesome/css/fontawesome.min.css" rel="stylesheet">
@@ -239,7 +239,7 @@
         
             <a class="
 
-    terminal-mkdocs-side-nav-item" href="../Git/">Git</a>
+    terminal-mkdocs-side-nav-item" href="../Docker/">Docker CheatSheet</a>
         
     
     </li>
@@ -257,6 +257,20 @@
 
     terminal-mkdocs-side-nav-item" href="../GitLab/">GitLab</a>
         
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <span class="
+
+    terminal-mkdocs-side-nav-item--active">Install</span>
     
     </li>
             
@@ -300,9 +314,11 @@
                 <li class="terminal-mkdocs-side-nav-li-ul-li">
     
         
-        <span class="
+        
+            <a class="
 
-    terminal-mkdocs-side-nav-item--active">MarkDown</span>
+    terminal-mkdocs-side-nav-item" href="../MkDocs/">MkDocs</a>
+        
     
     </li>
             
@@ -318,6 +334,38 @@
             <a class="
 
     terminal-mkdocs-side-nav-item" href="../Outillage/">Les outillages utiles en dév.</a>
+        
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../Sentry/">Sentry CheatSheet</a>
+        
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../SonarQube/">SonarQube CheatSheet</a>
         
     
     </li>
@@ -1008,37 +1056,56 @@
 </nav><hr>
 <nav>
     <ul>
-        <li><a href="#convertir-du-markdown-en-site-web">Convertir du MarkDown en site web</a></li>
-        <li><a href="#mkdocs">MkDocs</a></li>
+        <li><a href="#eslint-version-airbnb">ESLint (Version Airbnb)</a></li>
+        <li><a href="#prettier">Prettier</a></li>
+        <li><a href="#stylelint">StyleLint</a></li>
+        
     </ul>
 </nav>
 </aside>
             <main id="terminal-mkdocs-main-content">
 <section id="mkdocs-terminal-content">
-    <h2 id="convertir-du-markdown-en-site-web">Convertir du MarkDown en site web</h2>
-<p>Liens pour construire un site web via du MarkDown pour nos prises de notes par exemple.
-- <a href="https://www.mkdocs.org/">MkDocs</a>
-- <a href="https://docusaurus.io/fr/">Docusorus</a></p>
-<h3 id="mkdocs">MkDocs</h3>
+    <h2 id="eslint-version-airbnb">ESLint (Version Airbnb)</h2>
+<p>Run the following :</p>
+<pre><code>sudo npm install -g eslint
+npm info &quot;eslint-config-airbnb@latest&quot; peerDependencies
+</code></pre>
+<h2 id="prettier">Prettier</h2>
 <ol>
-<li>Lancer un environnement virtuel python dans le projet.<ol>
-<li><code>python3 -m venv .venv</code>  -m pour dire que l'on crée le fichier ici, et .venv est le nom du fichier.</li>
-<li><code>source .venv/bin/activate</code> pour se brancher sur l'environnement</li>
+<li>Run the following :</li>
 </ol>
+<pre><code>npm info &quot;eslint-config-airbnb@latest&quot; peerDependencies
+</code></pre>
+<ol>
+<li>Then, create an empty config file to let editors and other tools know you are using Prettier :</li>
+</ol>
+<pre><code>echo {}&gt; .prettierrc.json
+
+</code></pre>
+<ol>
+<li>Create a .prettierignore file to let the Prettier CLI and editors know which files to not format :<ul>
+<li>Tips : You can base your .prettierignore on your .gitignore file</li>
+</ul>
 </li>
-<li><code>pip install mkdocs</code> pour installer mkdocs</li>
-<li><code>mkdocs new .</code> pour créer le nouveau projet</li>
-<li><code>mkdocs serve</code> pour lancer le serveur</li>
 </ol>
-<blockquote>
-<p>Bien mettre les .md dans le dossier Docs</p>
-</blockquote>
+<pre><code>vi .prettierignore
+</code></pre>
+<p>Pour utiliser Prettier :
+    - <code>npx prettier . --write</code> pour formatter tous les fichiers.
+    - <code>npx prettier . --write folder/</code> pour formatter seulement un dossier.
+    - <code>npx prettier . --check</code> pour vérifier que tous les fichiers sont formatter.</p>
+<h2 id="stylelint">StyleLint</h2>
 <ol>
-<li>Créer un projet Github</li>
-<li>Lier son projet et push sur le répository Git</li>
-<li>Lancer  <code>mkdocs gh-deploy</code></li>
-<li>Settings -&gt; Pages -&gt; Et HOP.</li>
+<li>Run the following :</li>
 </ol>
+<pre><code>npm init stylelint
+npm install -D stylelint stylelint-config-standard
+</code></pre>
+<ol>
+<li>Run Stylelint on all the CSS files in your project :</li>
+</ol>
+<pre><code>npx stylelint &quot;**/*.css&quot;
+</code></pre>
 </section>
 
             </main>
