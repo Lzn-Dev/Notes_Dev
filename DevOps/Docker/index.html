@@ -236,6 +236,22 @@
                 <li class="terminal-mkdocs-side-nav-li-ul-li">
     
         
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../Docker-CLI/">Command Line Docker</a>
+        
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
         <span class="
 
     terminal-mkdocs-side-nav-item--active">Docker CheatSheet</span>
@@ -1057,13 +1073,61 @@
 <nav>
     <ul>
         <li><a href="#docker-cheatsheet">Docker CheatSheet</a></li>
-        
+        <li><a href="#quest-ce-que-cest">Qu'est ce que c'est ?</a></li><li><a href="#liens-docker">Liens docker</a></li><li><a href="#differences-vm-vs-docker">Differences VM vs Docker</a></li><li><a href="#contenu-dune-image-docker">Contenu d'une image docker</a></li>
     </ul>
 </nav>
 </aside>
             <main id="terminal-mkdocs-main-content">
 <section id="mkdocs-terminal-content">
     <h1 id="docker-cheatsheet">Docker CheatSheet</h1>
+<h2 id="quest-ce-que-cest">Qu'est ce que c'est ?</h2>
+<p>Docker est un système d'exploitation (ou environnement d'exécution) pour conteneurs.
+Docker Engine est installé sur chacun des serveurs sur lesquels vous souhaitez exécuter des conteneurs.
+Il vous fournit un ensemble de commandes simples pour concevoir, démarrer ou arrêter des conteneurs.</p>
+<ul>
+<li>Une technologie de conteneurisation =&gt; Isoler une zone du système sur lequel on va faire tourner une application.</li>
+<li>Une communauté très riche</li>
+<li>Une entreprise =&gt; Abonnement, offres payantes,...</li>
+<li>Open source, ecrit en <code>Go</code></li>
+</ul>
+<p>Docker permet de :
+- Empaqueter les applications : Dans des boites ou des <strong>images</strong> avec leurs <em>dépendances</em>
+- Les stocker : Stocker dans un registre qu'on pourra ensuite consommer
+- Les livrer : Mettre à disposition cette <strong>image</strong>
+- Les executer</p>
+<h2 id="liens-docker">Liens docker</h2>
+<ul>
+<li>(DockerHub)[https://hub.docker.com/]</li>
+</ul>
+<h2 id="differences-vm-vs-docker">Differences VM vs Docker</h2>
+<ul>
+<li>Docker :<ul>
+<li>Plus rapide à démarrer</li>
+<li>Ne consomme que ce qui est nécéssaire</li>
+<li>Pas d'OS à maintenir</li>
+<li>Plus compact</li>
+</ul>
+</li>
+<li>VM<ul>
+<li>Meilleur isolation</li>
+<li>Emulation du matériel</li>
+<li>Possibilité d'utiliser un OS différent</li>
+</ul>
+</li>
+</ul>
+<hr />
+<blockquote>
+<p>Image =&gt; Classe
+Conteneur =&gt; Instanciation de cette classe</p>
+</blockquote>
+<h2 id="contenu-dune-image-docker">Contenu d'une image docker</h2>
+<ul>
+<li>Fichier recette =&gt; Système de fichiers contenant les paquets et applications installées</li>
+<li>Ensemble de couches comportant des instructions chainées</li>
+<li>Une image est <em>inerte</em>, rien n'est en cours d'éxécution</li>
+<li>Il est possible de partir d'une image déjà existante</li>
+<li>Possibilité d'ignorer des fichiers à copier =&gt; <code>.dockerignore</code></li>
+</ul>
 </section>
 
             </main>
