@@ -63,4 +63,4 @@ Docker permet de :
 - Démarrer un conteneur juste le temps de lancer une commande
 
 ### Cycle de vie d'un container
-![](../../img/docker-container.png)
+![](../img/docker-container.png)
