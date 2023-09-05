@@ -1073,7 +1073,7 @@
 <nav>
     <ul>
         <li><a href="#docker-cheatsheet">Docker CheatSheet</a></li>
-        <li><a href="#quest-ce-que-cest">Qu'est ce que c'est ?</a></li><li><a href="#liens-docker">Liens docker</a></li><li><a href="#differences-vm-vs-docker">Differences VM vs Docker</a></li><li><a href="#contenu-dune-image-docker">Contenu d'une image docker</a></li>
+        <li><a href="#quest-ce-que-cest">Qu'est ce que c'est ?</a></li><li><a href="#liens-docker">Liens docker</a></li><li><a href="#differences-vm-vs-docker">Differences VM vs Docker</a></li><li><a href="#contenu-dune-image-docker">Contenu d'une image docker</a></li><li><a href="#les-conteneurs">Les conteneurs</a></li>
     </ul>
 </nav>
 </aside>
@@ -1128,6 +1128,24 @@ Conteneur =&gt; Instanciation de cette classe</p>
 <li>Il est possible de partir d'une image déjà existante</li>
 <li>Possibilité d'ignorer des fichiers à copier =&gt; <code>.dockerignore</code></li>
 </ul>
+<hr />
+<h2 id="les-conteneurs">Les conteneurs</h2>
+<ul>
+<li>Peut être vu comme l'instanciation d'une image</li>
+<li>Le conteneur fait tourner l'application par les instructions <code>ENTRYPOINT</code> et/ou <code>CMD</code></li>
+<li>Ils peuvent durer de quelques seconde à plusieurs années</li>
+</ul>
+<h3 id="il-est-possible-de">Il est possible de =&gt;</h3>
+<ul>
+<li>Limiter les ressources affectées aux conteneurs</li>
+<li>Gérer la persistance des données</li>
+<li>Permettre la connectivité à un ou plusieurs réseaux</li>
+<li>Se connecter dans un conteneur pour éxéctuer des commandes</li>
+<li>Copier des fichiers dans ou depuis un conteneur</li>
+<li>Démarrer un conteneur juste le temps de lancer une commande</li>
+</ul>
+<h3 id="cycle-de-vie-dun-container">Cycle de vie d'un container</h3>
+<p><img alt="" src="../../img/docker-container.png" /></p>
 </section>
 
             </main>
