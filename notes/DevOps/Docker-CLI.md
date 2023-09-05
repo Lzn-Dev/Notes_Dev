@@ -36,4 +36,11 @@
 - Stopper un conteneur spécifi
 `docker stop conteneur_id`
 
+- Lancer un container avec un nom, un hostname et un port dédié =>
+`docker container run --name jenkins01 -h jenkins01 -p 8080:8080 bee63bd85107`
 
+- Lister les processus en cours d'execution | -f pour follow en temps reel
+`docker logs nom_container`
+
+- Lister les différences depuis l'instanciation du container
+`docker diff nom_container`
