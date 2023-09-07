@@ -2,6 +2,8 @@
 
 - Build de l'image (A partir d'un Dockerfile)
 `docker build . -t nom-image`
+`docker build . -t nom_image --no-cache`
+`docker build . -t nom_image -f nom_dockerfile`
 
 - Liste les images
 `docker image ls`
@@ -44,3 +46,18 @@
 
 - Lister les différences depuis l'instanciation du container
 `docker diff nom_container`
+
+---
+
+- Créer un volume
+```
+docker volume create nom_volume
+```
+- Lister les volumes existants
+```
+docker volume ls
+```
+- Inspecter un volume
+```
+docker volume inspect nom_volume
+```

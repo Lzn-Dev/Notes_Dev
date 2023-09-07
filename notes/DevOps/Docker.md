@@ -64,3 +64,32 @@ Docker permet de :
 
 ### Cycle de vie d'un container
 ![](../img/docker-container.png)
+
+
+## ARGS vs ENV
+
+### ARG =>
+- Utilisé uniquement dnas la compilation
+- Peut ne pas avoir de valeur par défaut
+- Pour lui passer une valeur à la compilation =>
+```
+docker image build --build-arg MY_ARG=my_value
+```
+### ENV =>
+- Accessible aussi depuis le container
+
+
+## Le multi build
+
+TODO copier l'exemple depuis le PPT
+
+## Gestion des données
+
+- Volumes
+    - A chaque fois qu'un container avec une instruction Volume est créé, un repertoire volume est créé
+    ```
+    docker volume ls
+    ```
+- Bindmount
+- tmpfs
+
