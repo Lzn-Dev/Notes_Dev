@@ -239,6 +239,22 @@
         
             <a class="
 
+    terminal-mkdocs-side-nav-item" href="../Deploiement/">Deploiement avec docker</a>
+        
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
     terminal-mkdocs-side-nav-item" href="../Docker-CLI/">Command Line Docker</a>
         
     
@@ -1073,7 +1089,7 @@
 <nav>
     <ul>
         <li><a href="#docker-cheatsheet">Docker CheatSheet</a></li>
-        <li><a href="#quest-ce-que-cest">Qu'est ce que c'est ?</a></li><li><a href="#liens-docker">Liens docker</a></li><li><a href="#differences-vm-vs-docker">Differences VM vs Docker</a></li><li><a href="#contenu-dune-image-docker">Contenu d'une image docker</a></li><li><a href="#les-conteneurs">Les conteneurs</a></li>
+        <li><a href="#quest-ce-que-cest">Qu'est ce que c'est ?</a></li><li><a href="#liens-docker">Liens docker</a></li><li><a href="#differences-vm-vs-docker">Differences VM vs Docker</a></li><li><a href="#contenu-dune-image-docker">Contenu d'une image docker</a></li><li><a href="#les-conteneurs">Les conteneurs</a></li><li><a href="#args-vs-env">ARGS vs ENV</a></li><li><a href="#le-multi-build">Le multi build</a></li><li><a href="#gestion-des-donnees">Gestion des données</a></li>
     </ul>
 </nav>
 </aside>
@@ -1146,6 +1162,31 @@ Conteneur =&gt; Instanciation de cette classe</p>
 </ul>
 <h3 id="cycle-de-vie-dun-container">Cycle de vie d'un container</h3>
 <p><img alt="" src="../../img/docker-container.png" /></p>
+<h2 id="args-vs-env">ARGS vs ENV</h2>
+<h3 id="arg">ARG =&gt;</h3>
+<ul>
+<li>Utilisé uniquement dnas la compilation</li>
+<li>Peut ne pas avoir de valeur par défaut</li>
+<li>Pour lui passer une valeur à la compilation =&gt;</li>
+</ul>
+<pre><code>docker image build --build-arg MY_ARG=my_value
+</code></pre>
+<h3 id="env">ENV =&gt;</h3>
+<ul>
+<li>Accessible aussi depuis le container</li>
+</ul>
+<h2 id="le-multi-build">Le multi build</h2>
+<p>TODO copier l'exemple depuis le PPT</p>
+<h2 id="gestion-des-donnees">Gestion des données</h2>
+<ul>
+<li>Volumes<ul>
+<li>A chaque fois qu'un container avec une instruction Volume est créé, un repertoire volume est créé
+<code>docker volume ls</code></li>
+</ul>
+</li>
+<li>Bindmount</li>
+<li>tmpfs</li>
+</ul>
 </section>
 
             </main>

@@ -236,6 +236,22 @@
                 <li class="terminal-mkdocs-side-nav-li-ul-li">
     
         
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../Deploiement/">Deploiement avec docker</a>
+        
+    
+    </li>
+            
+        
+            
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
         <span class="
 
     terminal-mkdocs-side-nav-item--active">Command Line Docker</span>
@@ -1083,7 +1099,9 @@
 <ul>
 <li>
 <p>Build de l'image (A partir d'un Dockerfile)
-<code>docker build . -t nom-image</code></p>
+<code>docker build . -t nom-image</code>
+<code>docker build . -t nom_image --no-cache</code>
+<code>docker build . -t nom_image -f nom_dockerfile</code></p>
 </li>
 <li>
 <p>Liste les images
@@ -1142,6 +1160,22 @@
 <code>docker diff nom_container</code></p>
 </li>
 </ul>
+<hr />
+<ul>
+<li>Créer un volume</li>
+</ul>
+<pre><code>docker volume create nom_volume
+</code></pre>
+<ul>
+<li>Lister les volumes existants</li>
+</ul>
+<pre><code>docker volume ls
+</code></pre>
+<ul>
+<li>Inspecter un volume</li>
+</ul>
+<pre><code>docker volume inspect nom_volume
+</code></pre>
 </section>
 
             </main>
